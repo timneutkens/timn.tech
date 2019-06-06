@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Logo from '../components/logo'
 import Screen from '../components/screen'
 import AboutText from '../text/about.mdx'
@@ -27,7 +28,7 @@ const Container: SFC = ({children}) => {
 }
 
 const A: SFC<{noUnderline?: boolean, href: string}> = ({children, noUnderline, href}) => {
-  return <a className={`${noUnderline ? ' no-underline' : ''}`} href={href} target={href[0] === '.' || href.indexOf('mailto:') === 0 ? undefined : '_blank'}>
+  return <a rel="noopener" className={`${noUnderline ? ' no-underline' : ''}`} href={href} target={href[0] === '.' || href.indexOf('mailto:') === 0 ? undefined : '_blank'}>
     {children}
     <style jsx>{`
       a {
@@ -97,6 +98,10 @@ const Hero = () => {
 
 export default withAmp(() => {
   return <MDXProvider components={{h2: H2, a: A}}>
+    <Head>
+      <title>Tim Neutkens</title>
+      <meta name="description" content="Hi! I'm Tim Neutkens, a 22 year old software engineer from The Netherlands. You might know me as one of the authors of Next.js a popular open-source web development framework built on top of React." />
+    </Head>
     <Container>
       <Screen>
         <Header />
