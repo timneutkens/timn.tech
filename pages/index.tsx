@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Logo from '../components/logo'
 import Screen from '../components/screen'
 import AboutText from '../text/about.mdx'
