@@ -1,6 +1,6 @@
-import React, { Children } from 'react'
+import React, { Children, SFC } from 'react'
 
-const Screen = ({ fullWidth, height, children: originalChildren }) => {
+const Screen: SFC<{height?: string }> = ({height, children: originalChildren }) => {
   const children = Children.toArray(originalChildren)
   const header = children.length > 1 ? children[0] : null
   const content = header ? children[1] : children[0]
@@ -22,7 +22,7 @@ const Screen = ({ fullWidth, height, children: originalChildren }) => {
           display: flex;
           flex: 1;
           justify-content: center;
-          width: ${fullWidth ? '100%' : 'auto'};
+          width: auto;
         }
       `}</style>
     </div>

@@ -1,4 +1,4 @@
-export default (props) => {
+export default (props: any) => {
   return <svg
   width="50px"
   height="55px"

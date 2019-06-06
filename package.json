@@ -10,5 +10,9 @@
     "dev": "now dev",
     "build": "next build",
     "start": "next start"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.19",
+    "typescript": "^3.5.1"
   }
 }

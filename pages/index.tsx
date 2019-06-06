@@ -5,8 +5,9 @@ import AboutText from '../text/about.mdx'
 import ContactText from '../text/contact.mdx'
 import { MDXProvider } from '@mdx-js/react'
 import {withAmp} from 'next/amp'
+import {SFC} from 'react'
 
-const Container = ({children}) => {
+const Container: SFC = ({children}) => {
   return <div>
     {children}
     <style jsx global>{`
@@ -26,8 +27,8 @@ const Container = ({children}) => {
   </div>
 }
 
-const A = ({children, className = '', noUnderline, href, ...props}) => {
-  return <a className={`${className}${noUnderline ? ' no-underline' : ''}`} href={href} target={href[0] === '.' || href.indexOf('mailto:') === 0 ? null : '_blank'} {...props}>
+const A: SFC<{noUnderline?: boolean, href: string}> = ({children, noUnderline, href}) => {
+  return <a className={`${noUnderline ? ' no-underline' : ''}`} href={href} target={href[0] === '.' || href.indexOf('mailto:') === 0 ? undefined : '_blank'}>
     {children}
     <style jsx>{`
       a {
@@ -41,8 +42,8 @@ const A = ({children, className = '', noUnderline, href, ...props}) => {
   </a>
 }
 
-const H2 = ({children, ...props}) => {
-  return <h2 {...props}>
+const H2: SFC = ({children}) => {
+  return <h2>
     {children}
     <style jsx>{`
       h2 {
@@ -98,9 +99,6 @@ const Hero = () => {
 export default withAmp(() => {
   return <MDXProvider components={{h2: H2, a: A}}>
     <Container>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      </Head>
       <Screen>
         <Header />
         <Hero />
