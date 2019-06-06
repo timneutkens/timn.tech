@@ -1,3 +1,8 @@
-const withMDX = require('@zeit/next-mdx')
+const withMDX = require('@next/mdx')()
 
-module.exports = withMDX()
+module.exports = withMDX({
+  target: 'serverless',
+  experimental: {
+    autoExport: true
+  }
+})

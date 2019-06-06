@@ -3,6 +3,8 @@ import Logo from '../components/logo'
 import Screen from '../components/screen'
 import AboutText from '../text/about.mdx'
 import ContactText from '../text/contact.mdx'
+import { MDXProvider } from '@mdx-js/react'
+import {withAmp} from 'next/amp'
 
 const Container = ({children}) => {
   return <div>
@@ -93,20 +95,26 @@ const Hero = () => {
   </div>
 }
 
-export default () => {
-  return <Container>
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    </Head>
-    <Screen>
-      <Header />
-      <Hero />
-    </Screen>
-    <Screen height="50vh">
-      <AboutText components={{h2: H2, a: A}} />
-    </Screen>
-    <Screen height="50vh">
-      <ContactText components={{h2: H2, a: A}} />
-    </Screen>
-  </Container>
-}
+export default withAmp(() => {
+  return <MDXProvider components={{h2: H2, a: A}}>
+    <Container>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      </Head>
+      <Screen>
+        <Header />
+        <Hero />
+      </Screen>
+      <Screen height="50vh">
+        <div>
+          <AboutText />
+        </div>
+      </Screen>
+      <Screen height="50vh">
+        <div>
+          <ContactText />
+        </div>
+      </Screen>
+    </Container>
+  </MDXProvider>
+})
