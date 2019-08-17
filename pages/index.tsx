@@ -4,7 +4,6 @@ import Screen from '../components/screen'
 import AboutText from '../text/about.mdx'
 import ContactText from '../text/contact.mdx'
 import { MDXProvider } from '@mdx-js/react'
-import {withAmp} from 'next/amp'
 import {SFC} from 'react'
 
 const Container: SFC = ({children}) => {
@@ -96,7 +95,11 @@ const Hero = () => {
   </div>
 }
 
-export default withAmp(() => {
+export const config = {
+  amp: true
+}
+
+export default () => {
   return <MDXProvider components={{h2: H2, a: A}}>
     <Head>
       <title>Tim Neutkens</title>
@@ -119,4 +122,4 @@ export default withAmp(() => {
       </Screen>
     </Container>
   </MDXProvider>
-})
+}
