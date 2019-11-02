@@ -1,8 +1,7 @@
-const withMDX = require('@next/mdx')()
-
-module.exports = withMDX({
+module.exports = {
   experimental: {
     modern: true,
-    granularChunks: true
+    granularChunks: true,
+    css: true
   }
-})
+}
