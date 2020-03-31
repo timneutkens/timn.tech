@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "next": "^9.2.2-canary.7",
+    "next": "^9.3.4-canary.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
