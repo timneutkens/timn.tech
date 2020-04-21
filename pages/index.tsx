@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Logo from '../components/logo'
 
+export const config = {
+  unstable_runtimeJS: false
+}
+
 function Screen({children, half, className}: any) {
   return <div className="screen">
     <div className={`content${className ? ' ' + className : ''}`}>
