@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "next": "^9.3.6-canary.6",
+    "next": "^9.4.5-canary.28",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
@@ -13,5 +13,8 @@
     "@types/node": "^12.7.2",
     "@types/react": "^16.8.19",
     "typescript": "^3.5.1"
+  },
+  "resolutions": {
+    "webpack": "^5.0.0-beta.20"
   }
 }
