@@ -1,8 +1,11 @@
 {
   "dependencies": {
-    "next": "^9.4.5-canary.28",
+    "next": "^9.5.3-canary.3",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "tailwindcss": "^1.6.2"
   },
   "scripts": {
     "dev": "next dev",
@@ -15,6 +18,6 @@
     "typescript": "^3.5.1"
   },
   "resolutions": {
-    "webpack": "^5.0.0-beta.20"
+    "webpack": "^5.0.0-beta.26"
   }
 }

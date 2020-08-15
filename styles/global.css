@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   text-rendering: optimizeLegibility;
   margin: 0;
@@ -54,4 +54,14 @@ header a {
 
 .fullscreen {
   min-height: 100vh;
-}
+} */
+
+@tailwind base;
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
