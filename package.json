@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "next": "^9.5.3-canary.3",
+    "next": "^9.5.3-canary.20",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "react": "^16.11.0",
@@ -18,6 +18,6 @@
     "typescript": "^3.5.1"
   },
   "resolutions": {
-    "webpack": "^5.0.0-beta.26"
+    "webpack": "^5.0.0-beta.28"
   }
 }
