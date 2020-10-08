@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "next": "^9.5.3-canary.20",
+    "next": "^9.5.4",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "react": "^16.11.0",
