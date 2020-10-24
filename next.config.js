@@ -1,9 +1,8 @@
 module.exports = {
-  rewrites: () => [
-    {
-      source: "/",
-      destination: "/api/language-detect",
+  experimental: {
+    i18n: {
+      locales: ["nl", "en"],
+      defaultLocale: "en",
     },
-  ],
-  experimental: { unstable_webpack5cache: true },
+  },
 };

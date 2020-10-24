@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Logo from "../components/logo";
 import { FormattedMessage, useIntl, defineMessage } from "react-intl";
-import { GetStaticPropsContext, GetStaticPaths } from "next";
+import Link from "next/link";
 
 export const config = {
   unstable_runtimeJS: false,
@@ -106,32 +106,6 @@ function Homepage() {
       </main>
     </>
   );
-}
-
-export function getStaticProps({ params }: any) {
-  return {
-    props: {
-      lang: params.lang,
-    },
-  };
-}
-
-export function getStaticPaths() {
-  return {
-    paths: [
-      {
-        params: {
-          lang: "en",
-        },
-      },
-      {
-        params: {
-          lang: "nl",
-        },
-      },
-    ],
-    fallback: false,
-  };
 }
 
 export default Homepage;
