@@ -64,7 +64,7 @@ function Homepage() {
             <FormattedMessage
               id="intro"
               description="Introduction"
-              defaultMessage="Hi! I'm Tim Neutkens, a software engineer from The Netherlands."
+              defaultMessage="Hello! I'm Tim Neutkens, a software engineer from The Netherlands."
             />
             <br />
             <FormattedMessage
