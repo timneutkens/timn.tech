@@ -34,7 +34,7 @@ function Homepage() {
   return (
     <>
       <Head>
-        <title>Tim Neutkens Development</title>
+        <title>Tim Neutkens</title>
         <meta name="description" content={intl.formatMessage(titleMessage)} />
       </Head>
       <main className="container px-10 md:px-20 lg:px-20 xl:px-20 mx-auto">
