@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Logo from "../components/logo";
 import { FormattedMessage, useIntl, defineMessage } from "react-intl";
-import Link from "next/link";
 
 export const config = {
   unstable_runtimeJS: false,
@@ -35,7 +34,7 @@ function Homepage() {
   return (
     <>
       <Head>
-        <title>Tim Neutkens</title>
+        <title>Tim Neutkens Development</title>
         <meta name="description" content={intl.formatMessage(titleMessage)} />
       </Head>
       <main className="container px-10 md:px-20 lg:px-20 xl:px-20 mx-auto">
