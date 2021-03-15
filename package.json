@@ -2,7 +2,7 @@
   "dependencies": {
     "@formatjs/cli": "^2.7.12",
     "babel-plugin-react-intl": "^8.1.9",
-    "next": "^10.0.7-canary.6",
+    "next": "^10.0.9-canary.7",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "react": "^17.0.1",
