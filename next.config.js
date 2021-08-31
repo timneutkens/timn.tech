@@ -1,6 +1,7 @@
 module.exports = {
-  future: {
-    webpack5: true,
+  experimental: {
+    swcLoader: true,
+    swcMinify: true,
   },
   i18n: {
     locales: ["nl", "en"],
