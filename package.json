@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "@formatjs/cli": "^2.7.12",
     "babel-plugin-react-intl": "^8.1.9",
