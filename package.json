@@ -1,22 +1,16 @@
 {
   "type": "module",
   "dependencies": {
-    "@formatjs/cli": "^2.7.12",
-    "babel-plugin-react-intl": "^8.1.9",
-    "next": "^12.0.11-canary.17",
-    "postcss-flexbugs-fixes": "^4.2.1",
-    "postcss-preset-env": "^6.7.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-intl": "^5.7.1",
-    "tailwindcss": "^1.6.2"
+    "autoprefixer": "^10.4.13",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.4"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "extract-languages": "formatjs extract 'pages/**/*.ts*' 'components/**/*.ts*' --out-file lang/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'",
-    "compile-languages": "formatjs compile-folder lang compiler-lang"
+    "start": "next start"
   },
   "devDependencies": {
     "@types/node": "^12.7.2",
