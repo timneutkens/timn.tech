@@ -1,5 +1,5 @@
 import "../styles/global.css";
-
+import Analytics from "../components/analytics";
 export default function RootLayout({
   children,
 }: {
@@ -8,7 +8,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
