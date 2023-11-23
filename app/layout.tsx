@@ -1,10 +1,11 @@
 import "../styles/global.css";
 import Analytics from "../components/analytics";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = { width: "device-width", initialScale: 1 }
 
 export const metadata: Metadata = {
   title: "Tim Neutkens",
-  viewport: "width=device-width, initial-scale=1",
   description:
     "Hi! I'm Tim Neutkens, a software engineer from The Netherlands.",
 };
