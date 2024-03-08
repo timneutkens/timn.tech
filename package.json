@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build",
+    "build": "TURBOPACK=1 TURBOPACK_BUILD=1 next build",
     "start": "next start"
   },
   "devDependencies": {
