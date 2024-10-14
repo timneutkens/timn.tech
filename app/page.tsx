@@ -45,7 +45,7 @@ export default function Homepage() {
           Want to reach out? Contact me by{" "}
           <A href="mailto:hello@timn.tech">Email</A>,{" "}
           <A href="https://twitter.com/timneutkens">Twitter</A>, or{" "}
-          <A href="https://github.com/timneutkens">GitHub</A>
+          {/* <A href="https://github.com/timneutkens">GitHub</A> */}
         </p>
       </section>
     </main>
