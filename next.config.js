@@ -4,7 +4,7 @@
 const nextConfig = {
   experimental: {
     turbo: {
-      unstablePersistentCaching: 1,
+      unstablePersistentCaching: true,
     },
   },
 };
