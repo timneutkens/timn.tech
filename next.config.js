@@ -1,12 +1,6 @@
 // @ts-check
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    turbo: {
-      unstablePersistentCaching: true,
-    },
-  },
-};
-// test
+const nextConfig = {};
+
 export default nextConfig;
